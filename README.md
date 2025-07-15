@@ -46,25 +46,24 @@ Cкриншот конфигурации MASTER:
 ```
 SHOW MASTER STATUS;
 ```
-![Скриншот 1](img/1.png)
+![Скриншот 1](1.png)
 
 ```
 SELECT user, host, plugin FROM mysql.user WHERE user = 'replica';
 ```
-![Скриншот 1](img/1.1.png)
+![Скриншот 1](1.1.png)
 
 ```
 Настройка Master-сервера (192.168.56.117) /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
-![Скриншот 1](img/1.2.png)
-
+![Скриншот 1](1.2.png)
 
 Скриншот конфигурации SLAVE:
 
 ```
 SHOW SLAVE STATUS\G
 ```
-![Скриншот 2](img/2.png)
+![Скриншот 2](2.png)
 ```
 Slave_IO_Running: Yes
 Slave_SQL_Running: Yes
@@ -73,7 +72,7 @@ Slave_SQL_Running: Yes
 ```
 Настройка Master-сервера (192.168.56.116) cat /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
-![Скриншот 2](img/2.1.png)
+![Скриншот 2](2.1.png)
 
 
 
@@ -93,23 +92,23 @@ Slave_SQL_Running: Yes
 
 Cкриншот конфигурации SHOW MASTER STATUS на двух ВМ:
 
-![Скриншот 3](img/3.png)
+![Скриншот 3](3.png)
 
 ```
 START SLAVE
 ```
-![Скриншот 3](img/3.1.png)
+![Скриншот 3](3.1.png)
 
 ```
 SHOW BINARY LOGS
 ```
-![Скриншот 3](img/3.2.png)
+![Скриншот 3](3.2.png)
 
 
 Cкриншот состояния и режимы работы MASTER 192.168.56.116:
 ```
 CHANGE MASTER TO
 ```
-![Скриншот 3](img/3.3.png)
+![Скриншот 3](3.3.png)
 
 ---
